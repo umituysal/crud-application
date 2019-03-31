@@ -4,7 +4,7 @@ if(isset($_POST["id"]) && !empty($_POST["id"])){
 //config dosaysını dahil ediyoruz
 require_once "config.php";
 
-//Sorgu dilme islemi
+//Sorgu silme islemi
 $sql="DELETE FROM employees WHERE id= :id";
 if($stmt=$pdo->prepare($sql)){
     //Hazırlanan ifadeye değişkenleri parametre olarak bağlayın
